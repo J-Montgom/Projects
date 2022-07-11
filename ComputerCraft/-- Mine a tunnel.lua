@@ -62,4 +62,3 @@ for i=1, depth do
     end
     turtle.turnRight()
 end
-d

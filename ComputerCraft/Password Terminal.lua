@@ -15,7 +15,5 @@ while true do
         redstone.setOutput("back", true)
         sleep(5)
         redstone.setOutput("back", false)
-    else
-        print("Wrong password")
     end
 end

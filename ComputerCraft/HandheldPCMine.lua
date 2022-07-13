@@ -13,6 +13,27 @@
 
 local x,y,z = gps.locate(5)
 local location = vector.new(gps.locate(5))
+local selection
 
 print("You are located at: ".. location)
+
+while selection ~= -16, 16, -50 do
+    print("What are you hoping to mine?")
+    print("Enter 16 for iron")
+    print("Enter -16 for gold")
+    print("Enter -50 for lapas/redstone/diamond")
+    selection = term.read()
+end
+
+term.clear
+
+if selection == 16 do
+    print("Mining for iron")
+elseif selection == -16 do 
+    print("Mining for gold")
+elseif selection == -50 do 
+    print("Mining for other")
+else
+    print("Invalid selection")
+end
 

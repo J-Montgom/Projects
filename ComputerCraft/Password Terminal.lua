@@ -2,6 +2,8 @@
 
 -- File needs to be named startup in terminal so it doesn't shutoff due to chunk loading 
 
+os.pullEvent = os.pullEventRaw
+
 local pass = "SOMA"
 
 while true do

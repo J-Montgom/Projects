@@ -10,7 +10,7 @@ while true do
     term.clear()
     term.setCursorPos(1,1)
     print("Enter password: ")
-    input = read()
+    input = read("*")
     if input == pass then
         redstone.setOutput("back", true)
         sleep(5)

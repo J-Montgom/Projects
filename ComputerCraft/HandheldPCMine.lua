@@ -1,6 +1,7 @@
 -- This is for the handheld computer with endermodem
 -- Requires a 4 computer beacon to locate gps coordinates, sends coordinates to turtles, will set this up for 5 turtles
 -- -Z is North, +X is East
+-- Portable computers have the modem on the back so use peripheral.wrap("back")
 
 --[[
     Best levels for each ore:
@@ -10,7 +11,7 @@
 ]]
 
 -- 5 is the time before it times out
-
+local modem = peripheral.wrap("back")
 local x,y,z = gps.locate(5)
 local location = vector.new(gps.locate(5))
 local selection

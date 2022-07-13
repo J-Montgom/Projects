@@ -38,3 +38,11 @@ else
     print("Invalid selection")
 end
 
+modem.transmit(2, 1, location)
+
+--[[
+Use this on the turtles, has to import all details to properly work
+
+local event, modemSide, senderChannel, 
+replyChannel, message, senderDistance = os.pullEvent("modem_message")
+]]
